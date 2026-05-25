@@ -4,29 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>DirtWorx Site Solutions | Excavation, Sewer, Septic, Demolition & Emergency Response Central Illinois</title>
+<title>DirtWorx Site Solutions | Excavation, Sewer, Septic & Demolition Central Illinois</title>
 
-<meta name="description" content="DirtWorx Site Solutions is Central Illinois’ premier excavation, sewer, septic, drainage, demolition, and emergency site response company. Residential, commercial, municipal infrastructure solutions built on real field experience.">
-
-<meta name="keywords" content="excavation near me, sewer repair Central Illinois, septic contractor, drainage contractor, demolition services, site development Illinois">
+<meta name="description" content="DirtWorx Site Solutions provides excavation, sewer repair, septic systems, drainage, demolition, and emergency response across Central Illinois. Residential, commercial, and municipal services.">
 
 <style>
 
-:root{
---bg:#0a0a0a;
---card:#141414;
---line:#222;
---text:#fff;
---muted:#bdbdbd;
---accent:#ffffff;
---danger:#ff2b2b;
-}
-
 body{
 margin:0;
-font-family:Arial,Helvetica,sans-serif;
-background:var(--bg);
-color:var(--text);
+font-family:Arial, Helvetica, sans-serif;
+background:#0a0a0a;
+color:#fff;
 line-height:1.6;
 }
 
@@ -34,36 +22,36 @@ line-height:1.6;
 header{
 position:sticky;
 top:0;
-z-index:1000;
 background:#0f0f0f;
-border-bottom:1px solid var(--line);
+border-bottom:1px solid #222;
 padding:14px 20px;
+z-index:1000;
 }
 
-nav{
+.nav{
 display:flex;
 justify-content:space-between;
 align-items:center;
 }
 
-nav a{
-color:var(--text);
+.nav a{
+color:#fff;
 text-decoration:none;
 margin-left:14px;
-font-size:14px;
 opacity:.7;
 }
 
-nav a:hover{opacity:1;}
+.nav a:hover{
+opacity:1;
+}
 
 /* HERO */
 .hero{
-height:100vh;
+height:90vh;
 display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
-padding:20px;
 position:relative;
 background:url('https://images.unsplash.com/photo-1601598851547-4302969d0614') center/cover no-repeat;
 }
@@ -72,47 +60,36 @@ background:url('https://images.unsplash.com/photo-1601598851547-4302969d0614') c
 content:"";
 position:absolute;
 inset:0;
-background:rgba(0,0,0,0.80);
+background:rgba(0,0,0,0.78);
 }
 
 .hero-content{
 position:relative;
-max-width:1000px;
+max-width:900px;
+padding:20px;
 }
 
 .hero h1{
-font-size:58px;
-line-height:1.05;
-margin-bottom:18px;
+font-size:52px;
+line-height:1.1;
+margin-bottom:12px;
 }
 
 .hero p{
-color:var(--muted);
-font-size:18px;
-max-width:900px;
+color:#cfcfcf;
+max-width:750px;
 margin:auto;
-}
-
-.tag{
-display:inline-block;
-padding:6px 12px;
-border:1px solid #333;
-font-size:12px;
-letter-spacing:1px;
-color:#aaa;
-margin-bottom:15px;
 }
 
 /* BUTTONS */
 .btn{
 display:inline-block;
 padding:14px 22px;
-margin:10px;
 border:1px solid #fff;
-text-decoration:none;
 color:#fff;
-transition:.25s;
-font-size:14px;
+text-decoration:none;
+margin:10px;
+transition:.2s;
 }
 
 .btn:hover{
@@ -125,163 +102,59 @@ background:#fff;
 color:#000;
 }
 
-/* TRUST BAR */
+/* SECTIONS */
+section{
+padding:70px 20px;
+max-width:1100px;
+margin:auto;
+}
+
+/* TRUST */
 .trust{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
 gap:10px;
-padding:35px;
 text-align:center;
-border-top:1px solid var(--line);
-border-bottom:1px solid var(--line);
-color:var(--muted);
+padding:40px 20px;
+border-top:1px solid #222;
+border-bottom:1px solid #222;
+color:#aaa;
 font-size:13px;
 }
 
-/* STRATEGIC STATEMENT */
+/* STATEMENT */
 .statement{
-padding:100px 20px;
-max-width:1100px;
+text-align:center;
+max-width:850px;
 margin:auto;
-text-align:left;
 }
 
 .statement h2{
-font-size:40px;
-margin-bottom:15px;
-}
-
-.statement p{
-color:var(--muted);
-max-width:850px;
-}
-
-/* SERVICE GRID */
-section{
-padding:90px 20px;
-max-width:1200px;
-margin:auto;
-}
-
-h2{
-font-size:36px;
+font-size:34px;
 margin-bottom:10px;
 }
 
-.sub{
-color:var(--muted);
-max-width:850px;
-}
-
+/* GRID */
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
 gap:18px;
 margin-top:30px;
 }
 
 .card{
-background:var(--card);
-border:1px solid var(--line);
-padding:20px;
-transition:.25s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-border-color:#444;
-}
-
-.card img{
-width:100%;
-height:160px;
-object-fit:cover;
-margin-bottom:12px;
-border:1px solid #333;
-}
-
-/* PROBLEM BLOCKS */
-.problem-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:18px;
-margin-top:30px;
-}
-
-.problem{
-background:#101010;
-padding:20px;
+background:#141414;
+padding:22px;
 border:1px solid #222;
-}
-
-.problem strong{
-color:#fff;
-display:block;
-margin-bottom:8px;
 }
 
 /* EMERGENCY */
 .emergency{
-background:#0d0d0d;
-padding:110px 20px;
 text-align:center;
+background:#0d0d0d;
 border-top:1px solid #222;
 border-bottom:1px solid #222;
-}
-
-.pulse{
-width:10px;
-height:10px;
-background:var(--danger);
-border-radius:50%;
-display:inline-block;
-margin-right:8px;
-animation:pulse 1.2s infinite;
-}
-
-@keyframes pulse{
-0%{transform:scale(1);opacity:1;}
-50%{transform:scale(1.9);opacity:.35;}
-100%{transform:scale(1);opacity:1;}
-}
-
-/* FORM */
-form{
-max-width:700px;
-margin:auto;
-margin-top:30px;
-}
-
-input,select,textarea{
-width:100%;
-padding:13px;
-margin:8px 0;
-background:#0f0f0f;
-border:1px solid #333;
-color:#fff;
-}
-
-button{
-width:100%;
-padding:15px;
-background:#fff;
-border:none;
-font-weight:bold;
-cursor:pointer;
-}
-
-/* FLOAT CALL */
-.call{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#fff;
-color:#000;
-padding:14px 16px;
-border-radius:50px;
-font-weight:bold;
-z-index:9999;
-text-decoration:none;
+padding:80px 20px;
 }
 
 /* FOOTER */
@@ -289,8 +162,22 @@ footer{
 text-align:center;
 padding:30px;
 color:#666;
-font-size:13px;
 border-top:1px solid #222;
+font-size:13px;
+}
+
+input,select,textarea{
+width:100%;
+padding:12px;
+margin:8px 0;
+background:#111;
+border:1px solid #333;
+color:#fff;
+}
+
+form{
+max-width:600px;
+margin:auto;
 }
 
 </style>
@@ -300,141 +187,119 @@ border-top:1px solid #222;
 <body>
 
 <header>
-<nav>
+<div class="nav">
 <strong>DIRTWORX</strong>
 <div>
 <a href="#services">Services</a>
-<a href="#problems">Problems We Solve</a>
+<a href="#about">About</a>
 <a href="#emergency">Emergency</a>
 <a href="#contact">Contact</a>
 </div>
-</nav>
+</div>
 </header>
 
 <!-- HERO -->
 <div class="hero">
 <div class="hero-content">
 
-<div class="tag">CENTRAL ILLINOIS INFRASTRUCTURE SOLUTIONS</div>
-
-<h1>When the ground fails, everything above it becomes unstable.</h1>
+<h1>When the ground fails, everything above it follows.</h1>
 
 <p>
-We are the excavation, sewer, septic, drainage, demolition, and emergency response team trusted across Central Illinois.
-From homeowners to municipalities — if it’s underground or ground-level failure, we solve it.
+Excavation • Sewer • Septic • Drainage • Demolition • Emergency Response
 </p>
 
-<div>
 <a class="btn primary" href="#contact">Request Dispatch</a>
-<a class="btn" href="#services">View Capabilities</a>
-</div>
+<a class="btn" href="#services">View Services</a>
 
 </div>
 </div>
 
 <!-- TRUST -->
 <div class="trust">
-<div>Locally Owned & Operated</div>
-<div>Emergency Field Response</div>
+<div>Locally Owned</div>
+<div>Emergency Ready</div>
 <div>Residential • Commercial • Municipal</div>
-<div>Built on Real Jobsite Experience</div>
+<div>Field Built Experience</div>
 </div>
 
-<!-- STRATEGY -->
+<!-- ABOUT -->
+<section id="about">
 <div class="statement">
-<h2>We don’t sell services. We stabilize ground-level systems.</h2>
+<h2>We don’t sell services. We solve ground-level failures.</h2>
 <p>
-Every structure depends on what lies beneath it. When that foundation fails, it becomes an immediate risk to property, safety, and progress.
-We exist to eliminate that risk at the source.
+Everything above the surface depends on what’s beneath it. We stabilize the foundation so everything else can stand.
 </p>
 </div>
+</section>
 
 <!-- SERVICES -->
 <section id="services">
-<h2>Core Capabilities</h2>
+<h2 style="text-align:center;">Core Services</h2>
 
 <div class="grid">
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1601598851547-4302969d0614">
 <h3>Site Development</h3>
-<p>Land clearing, grading, excavation, and construction preparation.</p>
+<p>Excavation, grading, land clearing.</p>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1621619856624-42fd193a0661">
 <h3>Underground Utilities</h3>
-<p>Sewer, septic, water lines, trenching, and system repairs.</p>
+<p>Sewer, septic, water lines, trenching.</p>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1601933470096-0e34634ffcde">
-<h3>Demolition & Haul-Off</h3>
-<p>Controlled demolition, debris removal, and full site clearing.</p>
+<h3>Demolition</h3>
+<p>Safe teardown and full haul-off.</p>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd">
 <h3>Drainage Systems</h3>
-<p>Fix flooding, runoff, erosion, and long-term water damage risks.</p>
+<p>Water control, erosion prevention, flooding fixes.</p>
 </div>
 
 </div>
-</section>
-
-<!-- PROBLEMS -->
-<section id="problems">
-<h2>Problems We Solve</h2>
-
-<div class="problem-grid">
-
-<div class="problem"><strong>Standing Water</strong>Property damage, erosion, and foundation risk.</div>
-<div class="problem"><strong>Sewer Failure</strong>Backups, blockages, and system collapse.</div>
-<div class="problem"><strong>Septic Issues</strong>System failure requiring immediate correction.</div>
-<div class="problem"><strong>Unstable Ground</strong>Shifting soil and unsafe build conditions.</div>
-
-</div>
-
 </section>
 
 <!-- EMERGENCY -->
-<div class="emergency" id="emergency">
-<h2><span class="pulse"></span>Emergency Response Available</h2>
-<p class="sub">
-When failure happens, timing determines damage. We respond with urgency and clarity.
-</p>
-</div>
+<section id="emergency" class="emergency">
+
+<h2>Emergency Response Available</h2>
+<p>Sewer backup, flooding, septic failure, structural collapse.</p>
+
+<a class="btn primary" href="#contact">Call / Request Dispatch</a>
+
+</section>
 
 <!-- CONTACT -->
 <section id="contact">
-<h2>Request Dispatch</h2>
-<p class="sub">Tell us what’s happening. We respond like it matters — because it does.</p>
+
+<h2 style="text-align:center;">Request Dispatch</h2>
 
 <form onsubmit="event.preventDefault();alert('Request received. We will contact you shortly.');">
 
-<input type="text" placeholder="Name" required>
-<input type="text" placeholder="Phone" required>
+<input placeholder="Name">
+<input placeholder="Phone">
 
 <select>
 <option>Type of Work</option>
+<option>Emergency</option>
 <option>Residential</option>
 <option>Commercial</option>
 <option>Municipal</option>
-<option>Emergency</option>
 </select>
 
-<textarea rows="5" placeholder="Describe the situation..."></textarea>
+<textarea placeholder="Describe the issue"></textarea>
 
-<button type="submit">Send Dispatch Request</button>
+<button class="btn primary">Send Request</button>
 
 </form>
+
 </section>
 
 <footer>
-DirtWorx Site Solutions · Central Illinois Ground Infrastructure Response
+DirtWorx Site Solutions · Central Illinois Infrastructure Services
 </footer>
-
-<a class="call" href="tel:0000000000">Call Now</a>
 
 </body>
 </html>
